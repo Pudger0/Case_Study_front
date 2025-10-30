@@ -1,0 +1,16 @@
+.sections-bg {
+	position: relative;
+	background-color: $color-gray-lightest;
+	display: flow-root;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -183px; /* равен margin-bottom .about */
+		left: 0;
+		right: 0;
+		height: 183px;
+		background-color: $color-gray-lightest;
+		z-index: -2;
+	}
+}

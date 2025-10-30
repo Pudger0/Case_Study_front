@@ -1,0 +1,32 @@
+.client-tags {
+	&__list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 5.5px 16px;
+		border-radius: 4px;
+		outline: 1px solid $color-gray-light;
+		font-size: 14px;
+		line-height: 1.5;
+		font-weight: 700;
+		color: $color-gray-medium;
+		transition:
+			background-color $transition-03,
+			color $transition-03;
+
+		&:hover {
+			outline: none;
+			background-color: $color-accent-purple;
+			color: $color-white;
+		}
+	}
+}

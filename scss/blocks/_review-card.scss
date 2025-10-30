@@ -1,0 +1,60 @@
+.review-card {
+	max-width: 1020px;
+	padding: 64px 105px;
+	background-color: $color-white;
+	border-radius: 4px;
+
+	&__visual {
+		display: flex;
+		gap: 30px;
+	}
+
+	&__icon {
+		display: flex;
+		flex-shrink: 0;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	&__text {
+		margin: 0;
+		font-size: 20px;
+		line-height: 1.5;
+		p {
+			margin: 0;
+		}
+	}
+
+	&__profile {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	&__avatar {
+		flex-shrink: 0;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	}
+
+	&__name {
+		font-size: 16px;
+		line-height: 1.6;
+		font-weight: 700;
+		color: $color-dark-slate;
+	}
+
+	&__label {
+		font-size: 14px;
+		line-height: 1.5;
+		color: $color-gray-medium;
+	}
+}

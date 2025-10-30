@@ -1,0 +1,49 @@
+.menu-footer {
+	&__list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	&__link {
+		font-size: 16px;
+		line-height: 1.6;
+		color: $color-white-60;
+		transition: color $transition-03;
+
+		&:hover,
+		&:focus-visible {
+			color: $color-white;
+		}
+	}
+
+	&__link-with-icon {
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+
+		&:hover,
+		&:focus-visible {
+			.menu-footer__link-icon,
+			.menu-footer__link-text {
+				color: $color-white;
+			}
+		}
+	}
+
+	&__link-icon {
+		color: $color-white-60;
+		transition: color $transition-03;
+	}
+
+	&__link-text {
+		font-size: 16px;
+		line-height: 1.6;
+		color: $color-white-60;
+		transition: color $transition-03;
+	}
+}

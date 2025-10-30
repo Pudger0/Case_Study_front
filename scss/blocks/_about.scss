@@ -1,0 +1,101 @@
+.about {
+	position: relative;
+	margin-bottom: 183px;
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 705px 390px;
+		gap: 135px;
+	}
+
+	&__metrics {
+		margin-bottom: 80px;
+	}
+
+	&__text {
+		margin-bottom: 83px;
+	}
+
+	&__text-main {
+		margin: 0;
+		font-size: 20px;
+		line-height: 1.5;
+		font-weight: 700;
+		color: $color-dark-slate;
+		margin-bottom: 24px;
+	}
+
+	&__text-sub {
+		margin: 0;
+		font-size: 16px;
+		line-height: 1.6;
+	}
+
+	&__strategies-list {
+		margin-bottom: 24px;
+	}
+
+	&__img-wrapper {
+		position: relative;
+		left: -55px;
+		top: -10px;
+		width: 705px;
+		height: 541px;
+		margin-bottom: 80px;
+	}
+
+	&__illustration-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&__illustration-icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+	}
+
+	&__diagram {
+		margin-bottom: 80px;
+		box-shadow:
+			0px 4px 4px -4px #1e212c08,
+			0px 12px 10px -6px #9a9ca50a,
+			0px 30px 24px -10px #9a9ca50d,
+			0px 80px 80px -20px #9a9ca514;
+	}
+
+	&__recieved-list {
+		margin-bottom: 60px;
+	}
+
+	&__client-sidebar {
+		position: sticky;
+		top: 10px;
+		right: 0;
+		align-self: flex-start;
+	}
+
+	&__client-card {
+		margin-bottom: 48px;
+	}
+
+	&__client-tags {
+		margin-bottom: 48px;
+	}
+
+	&__socials {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+
+	&__socials-text {
+		font-size: 20px;
+		line-height: 1.5;
+		font-weight: 700;
+		color: $color-dark-slate;
+	}
+}

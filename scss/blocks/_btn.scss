@@ -1,0 +1,21 @@
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 199px;
+	width: 100%;
+	padding: 14px;
+	border-radius: 4px;
+	outline: 1px solid $color-gray-light;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: $color-gray-medium;
+
+	&--accent {
+		outline: none;
+		background-color: $color-accent-purple;
+		color: $color-white;
+		letter-spacing: 0.05em;
+	}
+}

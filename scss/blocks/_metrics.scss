@@ -1,0 +1,54 @@
+.metrics {
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 60px;
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		color: $color-dark-slate;
+	}
+
+	&__value {
+		font-size: 32px;
+		line-height: 1.3;
+		font-weight: 900;
+	}
+
+	&__label {
+		font-size: 20px;
+		line-height: 1.5;
+	}
+
+	&--studies-card {
+		.metrics__list {
+			gap: 32px;
+		}
+
+		.metrics__content {
+			gap: 12px;
+		}
+
+		.metrics__value {
+			font-size: 20px;
+			line-height: 1.5;
+			font-weight: 700;
+		}
+
+		.metrics__label {
+			font-size: 12px;
+			line-height: 1.5;
+		}
+	}
+}

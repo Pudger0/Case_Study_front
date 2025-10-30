@@ -1,0 +1,53 @@
+.text-list {
+	&__title {
+		margin: 0;
+		font-size: 32px;
+		line-height: 1.3;
+		font-weight: 900;
+		color: $color-dark-slate;
+		margin-bottom: 24px;
+	}
+
+	&__items {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	}
+
+	&__item {
+		font-size: 16px;
+		line-height: 1.6;
+		display: flex;
+		align-items: baseline;
+		gap: 16px;
+
+		&::before {
+			content: "";
+			background: url("../images/svg/checkmark-icon.svg") no-repeat;
+			width: 16px;
+			height: 16px;
+			flex-shrink: 0;
+		}
+	}
+
+	&--less-size {
+		.text-list__title {
+			font-size: 24px;
+			font-weight: 700;
+			margin-bottom: 12px;
+		}
+
+		.text-list__items {
+			gap: 7px;
+		}
+
+		.text-list__item {
+			font-size: 14px;
+			line-height: 1.5;
+			gap: 12px;
+		}
+	}
+}

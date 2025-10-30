@@ -1,0 +1,25 @@
+// Colors
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray-lightest: #f4f5f6;
+$color-gray-light: #d7dadd;
+$color-gray-medium: #787a80;
+$color-dark-gray: #424551;
+$color-dark-slate: #1e212c;
+$color-accent-purple: #7772f1;
+$color-accent-orange: #f89828;
+$color-accent-green: #03cea4;
+$color-accent-pink: #f52f6e;
+$color-accent-blue: #5a87fc;
+
+$color-white-05: rgba($color-white, 0.05);
+$color-white-12: rgba($color-white, 0.12);
+$color-white-20: rgba($color-white, 0.2);
+$color-white-60: rgba($color-white, 0.6);
+$color-dark-slate-60: rgba($color-dark-slate, 0.6);
+
+// Typography
+$ff-lato: "Lato", "Arial", sans-serif;
+
+// Transition
+$transition-03: 0.3s ease;

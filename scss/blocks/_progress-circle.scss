@@ -1,0 +1,54 @@
+.progress-circle {
+	--size: 80px; // размер круга
+	--thickness: 8px; // толщина кольца
+	--color: #f52f6e; // основной цвет
+	--bg-color: rgba(245, 47, 110, 0.3); // фоновый цвет
+	--value: 70; // процент (0–100)
+	// для большего удобства все эти параметры регулируются через инлайн стили у нужного элемента в html разметке
+
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+	position: relative;
+	display: inline-block;
+	flex-shrink: 0;
+
+	// Фоновое кольцо
+	background:
+		radial-gradient(
+				farthest-side,
+				transparent calc(100% - var(--thickness)),
+				var(--bg-color) calc(100% - var(--thickness))
+			)
+			center/cover no-repeat,
+		conic-gradient(var(--color) calc(var(--value) * 1%), var(--bg-color) 0);
+	mask: radial-gradient(farthest-side, transparent calc(100% - var(--thickness)), black calc(100% - var(--thickness)));
+	-webkit-mask: radial-gradient(
+		farthest-side,
+		transparent calc(100% - var(--thickness)),
+		black calc(100% - var(--thickness))
+	);
+
+	transition: background 0.3s ease;
+
+	/* Цветовые модификаторы */
+	&--pink {
+		--color: #{$color-accent-pink};
+		--bg-color: rgba(245, 47, 110, 0.3);
+	}
+
+	&--green {
+		--color: #{$color-accent-green};
+		--bg-color: rgba(3, 206, 164, 0.2);
+	}
+
+	&--blue {
+		--color: #{$color-accent-blue};
+		--bg-color: rgba(90, 135, 252, 0.2);
+	}
+
+	&--orange {
+		--color: #{$color-accent-orange};
+		--bg-color: rgba(248, 152, 40, 0.2);
+	}
+}

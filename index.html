@@ -1,21 +1,938 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
 
-    <style media="(prefers-color-scheme: light)">
-      @import url('./src/styles/colors/light.css');
-    </style>
-    <style media="(prefers-color-scheme: dark)">
-      @import url('./src/styles/colors/dark.css');
-    </style>
-  </head>
-  <body>
-    <h1>Hello project</h1>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Case Study</title>
+</head>
 
-    <script type="module" src="/src/index.js"></script>
-  </body>
+<body>
+	<header class="header" id="top">
+		<div class="container">
+			<div class="header__wrapper">
+				<a class="header__logo" href="about.html">
+					<svg class="menu__services-icon" width="130" height="22" aria-hidden="true">
+						<use xlink:href="#icon-logo"></use>
+					</svg>
+				</a>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<div class="menu__services">
+								<a class="menu__link" href="about.html">Services</a>
+								<button class="menu__services-btn" type="button">
+									<svg class="menu__services-icon" width="11" height="6" aria-hidden="true">
+										<use xlink:href="#icon-arrow"></use>
+									</svg>
+								</button>
+							</div>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link menu__link--active" href="about.html">Case Studies</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="about.html">About Us</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="about.html">Blog</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="about.html">Contacts</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="about.html" class="header__contact-link btn btn--accent">Talk to a human</a>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="hero">
+			<div class="hero__breadcrumbs breadcrumbs">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__link" href="about.html" aria-label="Ссылка на главную страницу">
+							<svg class="breadcrumbs__link-icon" width="16" height="16" aria-hidden="true">
+								<use xlink:href="#icon-home"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__link" href="about.html">Case Studies</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<span class="breadcrumbs__link breadcrumbs__link--active">200% increase in conversion rate for Lovato Company</span>
+					</li>
+				</ul>
+			</div>
+			<img class="hero__image" src="images/hero-bg-img.jpg" alt="фоновая картинка главной секции" width="1920" height="595">
+			<img class="hero__logo-image" src="images/client-logo-img.png" alt="картинка логотипа клиента" width="150" height="80">
+			<h1 class="hero__title">200% increase in conversion rate for Lovato Company</h1>
+		</section>
+		<section class="about">
+			<div class="container">
+				<div class="about__wrapper">
+					<div class="about__info">
+						<div class="about__metrics metrics">
+							<ul class="metrics__list">
+								<li class="metrics__item">
+									<div class="metrics__content">
+										<div class="metrics__progress progress-circle progress-circle--pink" style="--value: 70"></div>
+										<div class="metrics__info">
+											<span class="metrics__value">70%</span>
+											<span class="metrics__label">Open Rate</span>
+										</div>
+									</div>
+								</li>
+								<li class="metrics__item">
+									<div class="metrics__content">
+										<div class="metrics__progress progress-circle progress-circle--orange" style="--value: 100"></div>
+										<div class="metrics__info">
+											<span class="metrics__value">200%</span>
+											<span class="metrics__label">Growth in sales</span>
+										</div>
+									</div>
+								</li>
+								<li class="metrics__item">
+									<div class="metrics__content">
+										<div class="metrics__info">
+											<span class="metrics__value">8,000</span>
+											<span class="metrics__label">DAU</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="about__text">
+							<p class="about__text-main">
+								The Company has been with&nbsp;us for 3&nbsp;months. They are in&nbsp;our optimal package for SEO &amp;&nbsp;our premium package for SEM plus&nbsp;Ad spend ($1,000). The
+								client&rsquo;s goal was to&nbsp;get growth in
+								sales. We&nbsp;helped exceeding the client&rsquo;s goals in&nbsp;generating new clients.
+							</p>
+							<p class="about__text-sub">
+								At&nbsp;facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in&nbsp;et&nbsp;sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci,
+								consectetur
+								vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in&nbsp;massa. Feugiat leo nam nisl lacinia amet, odio. Mi&nbsp;varius viverra risus vel.
+							</p>
+						</div>
+						<img class="about__diagram" src="images/about-diagram-image.png" alt="картинка диаграммы">
+						<div class="about__strategies-list text-list">
+							<h3 class="text-list__title">Strategies</h3>
+							<ul class="text-list__items">
+								<li class="text-list__item">
+									Gravida elit et libero, varius congue risus quisque enim.
+								</li>
+								<li class="text-list__item">
+									Sit quis vitae, gravida aliquam condimentum.
+								</li>
+								<li class="text-list__item">
+									Praesent et facilisis nam mus senectus massa dignissim.
+								</li>
+								<li class="text-list__item">
+									Fermentum diam elementum viverra proin.
+								</li>
+							</ul>
+						</div>
+						<div class="about__text">
+							<p class="about__text-sub">
+								Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh
+								vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor
+								volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae. </p>
+						</div>
+						<div class="about__img-wrapper">
+							<img class="about__illustration-img" src="images/about-illustration-img-1.png" alt="картинка с графиками" width="705" height="541">
+							<svg class="about__illustration-icon" width="706" height="536" viewBox="0 0 706 536" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M693.518 324.815C699.353 248.686 717.182 174.01 637.586 105.073C558.166 36.2885 472.418 64.0506 361.739 37.4666C241.149 8.50199 204.905 -18.3084 148.065 16.4082C79.9544 58.0087 103.99 88.3848 42.6138 175.098C28.4413 195.121 -54.1059 289.378 57.7652 386.955C142.124 445.359 198.001 465.113 301.935 490.37C417.656 518.492 544.495 546.18 649.01 530.634C746.117 516.188 687.86 398.633 693.518 324.815Z"
+									fill="url(#paint0_linear_1772_2895)" />
+								<defs>
+									<linearGradient id="paint0_linear_1772_2895" x1="898.114" y1="202.067" x2="239.692" y2="408.568" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#F4F5F7" stop-opacity="0" />
+										<stop offset="1" stop-color="#F4F5F7" />
+									</linearGradient>
+								</defs>
+							</svg>
+						</div>
+						<div class="about__recieved-list text-list">
+							<h3 class="text-list__title">Resieved goals</h3>
+							<ul class="text-list__items">
+								<li class="text-list__item">
+									Bibendum malesuada mauris, id nisl enim diam.
+								</li>
+								<li class="text-list__item">
+									Nam id in non sed cras purus nunc et.
+								</li>
+								<li class="text-list__item">
+									Neque tortor, pellentesque amet est, eu accumsan condimentum nulla.
+								</li>
+								<li class="text-list__item">
+									Mauris orci, cursus nisl odio est adipiscing gravida magna eget.
+								</li>
+								<li class="text-list__item">
+									Sit turpis sit ultrices viverra adipiscing malesuada.
+								</li>
+							</ul>
+						</div>
+						<div class="about__result-list text-list">
+							<h3 class="text-list__title">Results</h3>
+							<ul class="text-list__items">
+								<li class="text-list__item">
+									Mauris dignissim blandit cursus imperdiet accumsan lorem vel, tortor.
+								</li>
+								<li class="text-list__item">
+									Quis mauris vel felis convallis nulla dignissim.
+								</li>
+								<li class="text-list__item">
+									Cursus sit platea ac posuere non interdum in.
+								</li>
+								<li class="text-list__item">
+									Mattis pellentesque vel, venenatis, urna, quis ut.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="about__client-sidebar">
+						<div class="about__client-card client-card">
+							<svg class="client-card__icon-shape" width="299" height="250" aria-hidden="true">
+								<use xlink:href="#icon-shapes-client"></use>
+							</svg>
+							<h3 class="client-card__title">About the client</h3>
+							<p class="client-card__description">At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam cras dignissim. Varius adipiscing eget
+								diamnisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum.</p>
+							<div class="client-card__industry">
+								<span class="client-card__label">Industry</span>
+								<span class="client-card__value">Electric company - B2B</span>
+							</div>
+							<div class="client-card__services text-list text-list--less-size">
+								<h3 class="text-list__title title">Services rendered</h3>
+								<ul class="text-list__items">
+									<li class="text-list__item">
+										Remarketing
+									</li>
+									<li class="text-list__item">
+										Conversion Rate Optimization
+									</li>
+									<li class="text-list__item">
+										User Testing
+									</li>
+									<li class="text-list__item">
+										PPC Management
+									</li>
+									<li class="text-list__item">
+										Usability Testing
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="about__client-tags client-tags">
+							<ul class="client-tags__list">
+								<li class="client-tags__item">
+									<button class="client-tags__btn" type="button">#SEO</button>
+								</li>
+								<li class="client-tags__item">
+									<button class="client-tags__btn" type="button">#research</button>
+								</li>
+								<li class="client-tags__item">
+									<button class="client-tags__btn" type="button">#payed_traffic</button>
+								</li>
+							</ul>
+						</div>
+						<div class="about__socials socials">
+							<span class="about__socials-text">Share:</span>
+							<ul class="socials__list">
+								<li class="socials__item">
+									<a class="socials__link" href="about.html">
+										<svg class="socials__link-icon" width="10" height="19" aria-hidden="true">
+											<use xlink:href="#icon-facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="socials__item">
+									<a class="socials__link" href="about.html">
+										<svg class="socials__link-icon" width="17" height="13" aria-hidden="true">
+											<use xlink:href="#icon-twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="socials__item">
+									<a class="socials__link" href="about.html">
+										<svg class="socials__link-icon" width="17" height="17" aria-hidden="true">
+											<use xlink:href="#icon-linkedin"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="analysis">
+			<svg class="analysis__icon-right" width="339" height="340" aria-hidden="true">
+				<use xlink:href="#icon-shapes-form-right"></use>
+			</svg>
+			<div class="container">
+				<div class="analysis__wrapper">
+					<svg width="398" height="397" viewBox="0 0 398 397" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="195.33" height="209.432" rx="3" transform="matrix(-1 0 0 1 389.336 12.2383)" fill="white" />
+						<path d="M194.006 12.2383V221.67H389.336" stroke="#1E212C" stroke-width="1.5" />
+						<rect width="87.8607" height="15.4465" transform="matrix(-1 0 0 1 335.602 5.59863)" fill="#00F0B5" />
+						<path
+							d="M291.67 11.9014C288.378 11.9014 285.71 9.23715 285.71 5.95068C285.71 2.66421 288.378 0 291.67 0C294.962 0 297.631 2.66421 297.631 5.95068C297.631 9.23715 294.962 11.9014 291.67 11.9014Z"
+							fill="#00F0B5" />
+						<rect width="87.8607" height="15.4465" transform="matrix(-1 0 0 1 335.602 5.59863)" fill="#D7DADD" />
+						<path d="M247.741 5.59766V21.0441H335.602" stroke="#1E212C" stroke-width="1.5" />
+						<path
+							d="M291.67 11.9014C288.378 11.9014 285.71 9.23715 285.71 5.95068C285.71 2.66421 288.378 0 291.67 0C294.962 0 297.631 2.66421 297.631 5.95068C297.631 9.23715 294.962 11.9014 291.67 11.9014Z"
+							fill="#D7DADD" />
+						<path d="M291.671 221.67V387.809" stroke="white" stroke-width="1.5" />
+						<path d="M397.391 387.809H185.952" stroke="white" stroke-width="1.5" />
+						<path
+							d="M22.726 379.397V366.605L34.5535 377.429L38.4956 343.483L69.542 365.621L73.4841 350.862L84.3253 361.686V343.975L97.6307 359.717L109.458 324.296L124.242 360.726L145.925 333.643L162.187 370.541V352.83L171.55 370.049L177.957 346.926L195.697 374.477L222.801 340.531L231.178 373.985L239.063 364.638L244.977 387.809H17.3054L15.3346 378.905L22.726 379.397Z"
+							fill="#00F0B5" />
+						<path d="M257.811 387.81H2.49926" stroke="white" stroke-width="1.5" />
+						<path d="M81.9203 151.505L138.045 147.821L152.58 205.054L185.951 386.661H140.529L145.819 377.196L81.9203 151.505Z" fill="#D7DADD" />
+						<path d="M74.6183 376.642L71.858 273.302L116.023 281.569L105.769 386.661H68.0234L74.6183 376.642Z" fill="#B3B7BC" />
+						<path d="M88.1555 276.353L116.023 281.569L114.793 294.175C91.6034 291.052 75.6327 284.835 75.6327 284.835L88.1555 276.353Z" fill="#1E212C" />
+						<path d="M143.515 238.855C143.515 238.855 150.541 241.019 159.838 244.548L168.818 293.421C152.447 296.403 136.505 296.393 122.567 295.068L112.583 259.807L143.515 238.855Z"
+							fill="#1E212C" />
+						<path d="M143.516 152.633L198.789 267.055C198.789 267.055 133.234 301.5 68.0242 282.9V164.409L143.516 152.633Z" fill="#00F0B5" />
+						<path
+							d="M122.951 38.5591V47.0477C122.951 53.6114 118.463 59.327 112.078 60.8937L98.5472 64.2138V31.0251L109.798 28.2645C112.966 27.4871 116.316 28.2068 118.884 30.2163C121.451 32.2258 122.951 35.3021 122.951 38.5591L122.951 38.5591Z"
+							fill="#D7DADD" />
+						<path d="M122.951 47.0479C122.951 53.6116 118.463 59.3272 112.078 60.8939L98.5472 64.214" stroke="#1E212C" stroke-width="1.5" />
+						<path
+							d="M109.164 45.3634C108.803 45.3634 108.511 45.0717 108.511 44.712C108.511 44.3522 108.803 44.0605 109.164 44.0605C109.524 44.0605 109.816 44.3522 109.816 44.712C109.816 45.0717 109.524 45.3634 109.164 45.3634Z"
+							fill="#1E212C" />
+						<path
+							d="M119.187 45.3634C118.827 45.3634 118.535 45.0717 118.535 44.712C118.535 44.3522 118.827 44.0605 119.187 44.0605C119.548 44.0605 119.84 44.3522 119.84 44.712C119.84 45.0717 119.548 45.3634 119.187 45.3634Z"
+							fill="#1E212C" />
+						<path d="M116.248 48.5985V38.5596H121.285" stroke="#1E212C" stroke-width="1.5" />
+						<path d="M107.937 38.5605H112.975" stroke="#1E212C" stroke-width="1.5" />
+						<path
+							d="M100.154 43.7029V47.1891C99.2497 47.1891 98.3822 46.8303 97.7426 46.1918C97.103 45.5532 96.7437 44.6872 96.7437 43.7841C96.7437 43.6796 96.7483 43.5763 96.7576 43.4742C96.9487 41.3598 100.154 41.58 100.154 43.7029Z"
+							fill="#E5E8ED" />
+						<path d="M100.154 47.1892C99.2497 47.1892 98.3822 46.8304 97.7426 46.1919C97.103 45.5533 96.7437 44.6872 96.7437 43.7842" stroke="#1E212C" stroke-width="1.5" />
+						<path d="M113.492 49.7715C112.61 50.652 111.18 50.652 110.298 49.7715" stroke="#1E212C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M116.246 48.6066L114.043 49.1472" stroke="#1E212C" stroke-width="1.5" stroke-linecap="round" />
+						<path
+							d="M118.534 59.0432L118.921 59.2193C121.431 60.3626 124.354 60.1291 126.649 58.6022C128.944 57.0752 130.286 54.4719 130.195 51.7197C129.753 39.0564 126.769 21.4878 113.492 22.7451C113.492 22.7451 100.004 19.6591 94.5981 32.0599C89.1924 44.4607 95.8232 50.4315 98.5461 51.8094"
+							stroke="white" stroke-width="1.5" />
+						<path d="M123.238 41.9954C123.238 41.9954 113.053 40.2122 111.897 33.3994C111.897 33.3994 106.851 41.8374 99.8098 42.6513" stroke="white" stroke-width="1.5" />
+						<path
+							d="M143.516 99.4316V152.632L68.0237 171.156V111.905C68.0237 90.8954 82.3906 72.6003 102.827 67.5858H102.827C112.628 65.181 122.992 67.4073 130.934 73.6236C138.876 79.8399 143.516 89.3561 143.516 99.4315L143.516 99.4316Z"
+							fill="#D7DADD" />
+						<path d="M198.789 267.055C198.789 267.055 133.234 301.5 68.0242 282.899" stroke="#1E212C" stroke-width="1.5" />
+						<path
+							d="M88.2836 73.9941C88.2836 73.9941 51.2951 99.8161 51.1562 138.27C50.9545 194.151 137.889 143.782 140.702 134.596L143.516 125.41C143.516 125.41 155.129 120.636 152.369 118.889C149.608 117.143 68.024 134.443 68.024 134.443"
+							stroke="white" stroke-width="1.5" />
+						<path
+							d="M130.2 73.9941C130.2 73.9941 151.448 89.1262 160.189 128.625C160.189 128.625 174.451 108.9 179.511 101.31C184.572 93.7191 188.712 98.7713 188.712 98.7713C188.712 98.7713 194.602 90.0448 198.788 93.7191C202.974 97.3935 191.777 160.408 150.91 167.94"
+							stroke="white" stroke-width="1.5" />
+						<path d="M147.431 123.695L233.031 81.625" stroke="#00F0B5" stroke-width="1.5" />
+						<path d="M309.06 57.0254C285.511 57.0254 266.42 76.0843 266.42 99.5947C266.42 123.105 285.511 142.164 309.06 142.164C332.61 142.164 351.701 123.105 351.701 99.5947H309.06V57.0254Z"
+							fill="#D7DADD" />
+						<path d="M266.42 99.5947C266.42 123.105 285.511 142.164 309.06 142.164C332.61 142.164 351.701 123.105 351.701 99.5947" stroke="#1E212C" stroke-width="1.5" />
+						<path d="M351.701 99.5947H309.061L343.379 124.861C348.797 117.549 351.715 108.69 351.701 99.5947Z" fill="#1E212C" />
+						<path d="M309.061 44.1514V99.595H364.597C364.597 84.8904 358.746 70.7881 348.331 60.3904C337.916 49.9927 323.79 44.1514 309.061 44.1514Z" fill="#00F0B5" />
+						<path d="M309.061 99.5952H364.597" stroke="#1E212C" stroke-width="1.5" />
+						<rect width="26.5544" height="26.5102" transform="matrix(1 0 0 -1 306.49 199.781)" fill="#D7DADD" />
+						<path d="M299.211 175.269L319.768 154.745L340.326 175.269H299.211Z" fill="#D7DADD" />
+						<rect width="23.0147" height="22.9763" transform="matrix(1 0 0 -1 258.676 199.819)" fill="#9A9CA5" />
+						<path d="M252.365 178.574L270.183 160.786L288 178.574H252.365Z" fill="#9A9CA5" />
+						<rect width="15.6383" height="15.6123" transform="matrix(1 0 0 -1 221.229 199.999)" fill="#1E212C" />
+						<path d="M216.941 185.563L229.048 173.477L241.154 185.563H216.941Z" fill="#1E212C" />
+					</svg>
+					<form class="analysis__form" action="#">
+						<div class="analysis__form-inner">
+							<h2 class="analysis__form-title">Get a Free SEO Analysis!</h2>
+							<div class="analysis__form-inputs">
+								<div class="custom-input">
+									<input class="custom-input__field" type="text" name="user-name" id="user-name" placeholder="Your name" required>
+									<label class="custom-input__label" for="user-name">Name</label>
+								</div>
+								<div class="custom-input">
+									<input class="custom-input__field" type="email" name="user-email" id="user-email" placeholder="Your working email" required>
+									<label class="custom-input__label" for="user-name">Email</label>
+								</div>
+								<div class="custom-input custom-input--flat">
+									<input class="custom-input__field" type="text" name="user-url" id="user-url" placeholder="http://yoursite.com" required>
+									<label class="custom-input__label" for="user-name">Your website URL</label>
+								</div>
+							</div>
+							<div class="analysis__form-submit-block">
+								<div class="custom-checkbox">
+									<input class="custom-checkbox__field visually-hidden" type="checkbox" name="agree" id="agree">
+									<label class="custom-checkbox__label" for="agree">
+										<div class="custom-checkbox__icon-wrapper">
+											<svg class="custom-checkbox__icon" width="10" height="8" aria-hidden="true">
+												<use xlink:href="#icon-checkbox"></use>
+											</svg>
+										</div>
+										<span class="custom-checkbox__text">I agree to receive communications from Createx SEO Agency</span>
+									</label>
+								</div>
+								<button class="analysis__form-submit btn btn--accent" type="button">Get a free analysis</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<div class="sections-bg">
+			<section class="reviews">
+				<div class="container">
+					<h2 class="reviews__title">What our clients say</h2>
+					<div class="reviews__slider swiper">
+						<svg class="reviews__slider-icon" width="864" height="484" viewBox="0 0 864 484" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M8.25706 245.206C16.9438 346.759 2.54426 410.577 115.351 463.247C224.983 514.435 357.002 454.124 474.207 436.918C599.207 418.567 750.005 520.882 823.817 436.918C902.375 347.554 854.077 227.909 756.637 136.902C672.331 58.161 530.236 101.608 408.386 79.5874C291.576 58.4774 171.213 -34.8597 76.2473 13.9415C-22.4973 64.6845 -0.238349 145.89 8.25706 245.206Z"
+								fill="url(#paint0_linear_2199_2)" />
+							<defs>
+								<linearGradient id="paint0_linear_2199_2" x1="-182.416" y1="372.538" x2="510.415" y2="12.1326" gradientUnits="userSpaceOnUse">
+									<stop stop-color="white" stop-opacity="0" />
+									<stop offset="1" stop-color="white" />
+								</linearGradient>
+							</defs>
+						</svg>
+						<!-- <svg class="reviews__slider-icon" width="1020" height="490" viewBox="0 0 1020 490" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_2199_1)">
+								<path
+									d="M79.343 246.555C88.0297 348.107 73.6302 411.926 186.437 464.596C296.069 515.784 428.088 455.473 545.293 438.266C670.293 419.916 821.091 522.231 894.903 438.266C973.461 348.903 925.163 229.257 827.723 138.251C743.417 59.5097 601.322 102.957 479.472 80.9361C362.662 59.8261 242.299 -33.5111 147.333 15.2901C48.5886 66.0331 70.8476 147.239 79.343 246.555Z"
+									fill="url(#paint0_linear_2199_1)" />
+							</g>
+							<defs>
+								<linearGradient id="paint0_linear_2199_1" x1="-111.33" y1="373.887" x2="581.501" y2="13.4812" gradientUnits="userSpaceOnUse">
+									<stop stop-color="white" stop-opacity="0" />
+									<stop offset="1" stop-color="white" />
+								</linearGradient>
+								<clipPath id="clip0_2199_1">
+									<rect width="1020" height="490" fill="white" />
+								</clipPath>
+							</defs>
+						</svg> -->
+						<ul class="reviews__list swiper-wrapper">
+							<li class="reviews__item">
+								<div class="reviews__card review-card">
+									<div class="review-card__visual">
+										<svg class="review-card__icon" width="28" height="20" aria-hidden="true">
+											<use xlink:href="#icon-quote"></use>
+										</svg>
+										<div class="review-card__content">
+											<blockquote class="review-card__text">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae
+													id
+													turpis
+													tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+											</blockquote>
+											<div class="review-card__profile">
+												<img class="review-card__avatar" src="images/review-profile-img-1.png" alt="картинка с аватаром профиля">
+												<div class="review-card__info">
+													<span class="review-card__name">Courtney Alexander</span>
+													<span class="review-card__label">Position, Company name</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<!-- Кнопки переключения -->
+						<button class="reviews__btn reviews__btn--prev" aria-label="Previous slide" type="button">
+							<svg class="reviews__btn-icon" width="18" height="11" aria-hidden="true">
+								<use xlink:href="#icon-slider-arrow"></use>
+							</svg>
+						</button>
+						<button class="reviews__btn reviews__btn--next" aria-label="Next slide" type="button">
+							<svg class="reviews__btn-icon" width="18" height="11" aria-hidden="true">
+								<use xlink:href="#icon-slider-arrow"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="case-studies">
+				<div class="container">
+					<div class="case-studies__heading">
+						<h2 class="case-studies__title">Check out our other case studies</h2>
+						<!-- Кнопки переключения -->
+						<div class="case-studies__slider-buttons">
+							<button class="case-studies__btn case-studies__btn--prev" aria-label="Previous slide" type="button">
+								<svg class="case-studies__btn-icon" width="18" height="11" aria-hidden="true">
+									<use xlink:href="#icon-slider-arrow"></use>
+								</svg>
+							</button>
+							<button class="case-studies__btn case-studies__btn--next" aria-label="Next slide" type="button">
+								<svg class="case-studies__btn-icon" width="18" height="11" aria-hidden="true">
+									<use xlink:href="#icon-slider-arrow"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="case-studies__slider swiper">
+						<ul class="case-studies__list swiper-wrapper">
+							<li class="case-studies__item">
+								<div class="case-studies__card studies-card">
+									<div class="studies-card__content">
+										<div class="studies-card__heading">
+											<img class="studies-card__image" src="images/studies-card-img1.png" alt="картирнка логотип компании">
+											<span class="studies-card__label">Charity organisation</span>
+										</div>
+										<div class="studies-card__text">
+											<p>Createx SEO Agency helped National Inc. increase their MQL to SQL conversion rate by 300%.</p>
+										</div>
+									</div>
+									<div class="studies-card__metric metrics metrics--studies-card">
+										<ul class="metrics__list">
+											<li class="metrics__item">
+												<div class="metrics__content">
+													<div class="metrics__progress progress-circle progress-circle--orange" style="--value: 90; --size: 40px; --thickness: 4px"></div>
+													<div class="metrics__info">
+														<span class="metrics__value">90%</span>
+														<span class="metrics__label">Engagement</span>
+													</div>
+												</div>
+											</li>
+											<li class="metrics__item">
+												<div class="metrics__content">
+													<div class="metrics__progress progress-circle progress-circle--green" style="--value: 100; --size: 40px; --thickness: 4px"></div>
+													<div class="metrics__info">
+														<span class="metrics__value">100%</span>
+														<span class="metrics__label">Deliverability</span>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="case-studies__item">
+								<div class="case-studies__card studies-card studies-card--with-bg">
+									<img class="studies-card__img" src="images/case-card-img-1.jpg" alt="фоновая картинка карточки">
+									<div class="studies-card__content">
+										<div class="studies-card__heading">
+											<img class="studies-card__image" src="images/studies-card-img2.png" alt="картирнка логотип компании">
+											<span class="studies-card__label">Oil and natural resources</span>
+										</div>
+										<div class="studies-card__text">
+											<p>With an advanced A/B testing and usability analysis, Createx SEO Agency helps Del Mar see a 400% increase in conversion rate.</p>
+										</div>
+									</div>
+									<div class="studies-card__metrics metrics metrics--studies-card">
+										<ul class="metrics__list">
+											<li class="metrics__item">
+												<div class="metrics__content">
+													<div class="metrics__progress progress-circle progress-circle--blue" style="--value: 100; --size: 40px; --thickness: 4px"></div>
+													<div class="metrics__info">
+														<span class="metrics__value">200%</span>
+														<span class="metrics__label">Growth in sales</span>
+													</div>
+												</div>
+											</li>
+											<li class="metrics__item">
+												<div class="metrics__content">
+													<div class="metrics__info">
+														<span class="metrics__value">1,400</span>
+														<span class="metrics__label">Target investors</span>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="case-studies__item">
+								<div class="case-studies__card studies-card">
+									<div class="studies-card__content">
+										<div class="studies-card__heading">
+											<img class="studies-card__image" src="images/studies-card-img3.png" alt="картирнка логотип компании">
+											<span class="studies-card__label">Personal care</span>
+										</div>
+										<div class="studies-card__text">
+											<p>We helped Sunset company break through a noisy industry and better understand their buyer's journey.</p>
+										</div>
+									</div>
+									<div class="studies-card__metrics metrics--studies-card">
+										<ul class="metrics__list">
+											<li class="metrics__item">
+												<div class="metrics__content">
+													<div class="metrics__progress progress-circle progress-circle--pink" style="--value: 70; --size: 40px; --thickness: 4px"></div>
+													<div class="metrics__info">
+														<span class="metrics__value">70%</span>
+														<span class="metrics__label">Open Rate</span>
+													</div>
+												</div>
+											</li>
+											<li class="metrics__item">
+												<div class="metrics__content">
+													<div class="metrics__progress progress-circle progress-circle--orange" style="--value: 100; --size: 40px; --thickness: 4px"></div>
+													<div class="metrics__info">
+														<span class="metrics__value">200%</span>
+														<span class="metrics__label">Growth in sales</span>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="case-studies__more-studies-wrapper">
+						<span class="case-studies__text">Explore more case studies</span>
+						<button class="case-studies__button btn btn--accent" type="button">View all case studies</button>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- если сделать декоративные иконки то будет горизонтальный скролл-->
+		<svg class="main__icon-under-form" width="441" height="596" aria-hidden="true">
+			<use xlink:href="#icon-shapes-main-form"></use>
+		</svg>
+		<svg class="main__icon-slider-right" width="335" height="389" aria-hidden="true">
+			<use xlink:href="#icon-shapes-main-slider"></use>
+		</svg>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__content">
+				<div class="footer__inner">
+					<a class="footer__logo" href="about.html" aria-label="логотип компании">
+						<svg class="menu__services-icon" width="130" height="22" aria-hidden="true">
+							<use xlink:href="#icon-logo"></use>
+						</svg>
+					</a>
+					<p class="footer__text">Createx SEO Agency is a full-service digital marketing agency. We help businesses make more money through a wealth of performance data and market research.
+						We create
+						science-based SEO strategies to empower our clients.</p>
+					<div class="footer__socials socials socials--footer">
+						<ul class="socials__list">
+							<li class="socials__item">
+								<a class="socials__link" href="about.html">
+									<svg class="socials__link-icon" width="10" height="19" aria-hidden="true">
+										<use xlink:href="#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="about.html">
+									<svg class="socials__link-icon" width="17" height="17" aria-hidden="true">
+										<use xlink:href="#icon-linkedin"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="about.html">
+									<svg class="socials__link-icon" width="17" height="13" aria-hidden="true">
+										<use xlink:href="#icon-twitter"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="about.html">
+									<svg class="socials__link-icon" width="17" height="17" aria-hidden="true">
+										<use xlink:href="#icon-instagram"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__inner">
+					<h3 class="footer__sub-title">COMPANY</h3>
+					<div class="footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="about.html">About Us</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="about.html">Case Studies</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="about.html">Blog</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="about.html">Careers</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="about.html">Contacts</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__inner">
+					<h3 class="footer__sub-title">SERVICES</h3>
+					<div class="footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="about.html">Social Media</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="about.html">SEO</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="about.html">Research</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="about.html">Content & PR</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="about.html">Payed Traffic</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__inner">
+					<h3 class="footer__sub-title">CONTACT US</h3>
+					<div class="footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a class="menu-footer__link-with-icon" href="+79999999999">
+									<svg class="menu-footer__link-icon" width="16" height="16" aria-hidden="true">
+										<use xlink:href="#icon-footer-phone"></use>
+									</svg>
+									<span class="menu-footer__link-text">(405) 555-0128</span>
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link-with-icon" href="mailto:example@example.com">
+									<svg class="menu-footer__link-icon" width="16" height="16" aria-hidden="true">
+										<use xlink:href="#icon-footer-email"></use>
+									</svg>
+									<span class="menu-footer__link-text">hello@createx.com</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__inner footer__inner--margins">
+					<h3 class="footer__sub-title">SIGN UP TO OUR NEWSLETTER</h3>
+					<form action="#" class="footer__form">
+						<div class="custom-input custom-input--footer">
+							<input class="custom-input__field" type="email" name="user-email" id="user-email" required>
+							<button class="footer__subscribe-btn" type="submit">
+								<svg class="footer__subscribe-icon" width="16" height="16" aria-hidden="true">
+									<use xlink:href="#icon-slider-arrow"></use>
+								</svg>
+							</button>
+						</div>
+						<p class="footer__subscribe-text">*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+					</form>
+				</div>
+			</div>
+			<div class="footer__partners">
+				<ul class="footer__partners-list">
+					<li class="footer__partners-item">
+						<img class="footer__partners-img" src="images/footer-partners-img-1.png" alt="кантинка логотипа партнера">
+					</li>
+					<li class="footer__partners-item">
+						<img class="footer__partners-img" src="images/footer-partners-img-2.png" alt="кантинка логотипа партнера">
+					</li>
+					<li class="footer__partners-item">
+						<img class="footer__partners-img" src="images/footer-partners-img-3.png" alt="кантинка логотипа партнера">
+					</li>
+					<li class="footer__partners-item">
+						<img class="footer__partners-img" src="images/footer-partners-img-4.png" alt="кантинка логотипа партнера">
+					</li>
+				</ul>
+				<div class="footer__go-top">
+					<span class="footer__go-top-text">GO TO TOP</span>
+					<a class="footer__go-top-button" href="#top">
+						<svg class="footer__go-top-button-icon" width="16" height="9" aria-hidden="true">
+							<use xlink:href="#icon-arrow"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<span class="footer__copyright-text">© All rights reserved.Made with</span>
+				<svg class="footer__copyright-icon" width="16" height="16" aria-hidden="true">
+					<use xlink:href="#icon-footer-heart"></use>
+				</svg>
+				<a href="about.html" class="footer__copyright-link">by Createx Studio </a>
+			</div>
+		</div>
+	</footer>
+
+	<svg style="display:none;" aria-hidden="true">
+		<symbol id="icon-logo" viewBox="0 0 130 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M0 11.0998C0 4.9998 3.3 1.2998 8.7 1.2998C12.8 1.2998 16.1 3.7998 16.7 7.4998C16.8 7.8998 16.5 8.1998 16.1 8.1998H13.5C13.2 8.1998 13 7.9998 12.9 7.6998C12.4 5.7998 10.8 4.5998 8.7 4.5998C5.8 4.5998 4 7.0998 4 11.0998C4 15.0998 5.8 17.5998 8.8 17.5998C10.9 17.5998 12.4 16.4998 13 14.6998C13.1 14.3998 13.3 14.1998 13.6 14.1998H16.2C16.6 14.1998 16.9 14.5998 16.8 14.8998C16.2 18.4998 13 20.8998 8.8 20.8998C3.3 20.8998 0 17.0998 0 11.0998Z"
+				fill="white" />
+			<path
+				d="M24.2997 20.4001H21.3997C21.0997 20.4001 20.8997 20.2001 20.8997 19.9001V2.60006C20.8997 2.20006 21.2997 1.80006 21.6997 1.80006H28.6997C32.7997 1.80006 35.2997 4.10006 35.2997 7.70006C35.2997 9.80006 34.2997 11.7001 32.5997 12.7001C32.1997 12.9001 32.0997 13.4001 32.2997 13.7001L35.3997 19.6001C35.5997 19.9001 35.2997 20.3001 34.9997 20.3001H31.6997C31.4997 20.3001 31.2997 20.2001 31.1997 20.0001L28.2997 14.0001C28.1997 13.7001 27.8997 13.6001 27.5997 13.6001H25.2997C24.9997 13.6001 24.7997 13.8001 24.7997 14.1001V20.0001C24.8997 20.2001 24.5997 20.4001 24.2997 20.4001ZM24.8997 10.2001C24.8997 10.5001 25.0997 10.7001 25.3997 10.7001H28.3997C30.3997 10.7001 31.4997 9.60006 31.4997 7.80006C31.4997 6.00006 30.2997 4.90006 28.3997 4.90006H25.4997C25.1997 4.90006 24.9997 5.10006 24.9997 5.40006V10.2001H24.8997Z"
+				fill="white" />
+			<path
+				d="M51.4998 20.4001H40.4998C40.0998 20.4001 39.7998 20.1001 39.7998 19.7001V2.50006C39.7998 2.10006 40.0998 1.80006 40.4998 1.80006H51.4998C51.8998 1.80006 52.1998 2.10006 52.1998 2.50006V4.40006C52.1998 4.80006 51.8998 5.10006 51.4998 5.10006H44.1998C43.8998 5.10006 43.6998 5.30006 43.6998 5.60006V9.00006C43.6998 9.30006 43.8998 9.50006 44.1998 9.50006H50.9998C51.3998 9.50006 51.6998 9.80006 51.6998 10.2001V11.9001C51.6998 12.3001 51.3998 12.6001 50.9998 12.6001H44.1998C43.8998 12.6001 43.6998 12.8001 43.6998 13.1001V16.9001C43.6998 17.2001 43.8998 17.4001 44.1998 17.4001H51.4998C51.8998 17.4001 52.1998 17.7001 52.1998 18.1001V20.0001C52.1998 20.1001 51.8998 20.4001 51.4998 20.4001Z"
+				fill="white" />
+			<path
+				d="M66.9999 15.9001H61.2999C60.9999 15.9001 60.7999 16.1001 60.6999 16.3001L59.5999 20.0001C59.4999 20.3001 59.2999 20.4001 58.9999 20.4001H56.3999C55.9999 20.4001 55.6999 20.0001 55.7999 19.6001L61.7999 2.20006C61.8999 2.00006 62.0999 1.80006 62.3999 1.80006H66.0999C66.3999 1.80006 66.5999 2.00006 66.6999 2.20006L72.6999 19.6001C72.7999 20.0001 72.4999 20.4001 72.0999 20.4001H69.1999C68.8999 20.4001 68.6999 20.2001 68.5999 20.0001L67.4999 16.3001C67.4999 16.1001 67.1999 15.9001 66.9999 15.9001ZM62.0999 13.0001H66.1999C66.3999 13.0001 66.4999 12.8001 66.4999 12.6001L64.2999 5.60006H64.0999L61.8999 12.6001C61.7999 12.8001 61.8999 13.0001 62.0999 13.0001Z"
+				fill="white" />
+			<path
+				d="M79.0001 19.7005V5.50045C79.0001 5.20045 78.8001 5.00045 78.5001 5.00045H74.1001C73.7001 5.00045 73.3001 4.70045 73.3001 4.20045V2.50045C73.3001 2.10045 73.6001 1.70045 74.1001 1.70045H87.7001C88.1001 1.70045 88.5001 2.00045 88.5001 2.50045V4.20045C88.5001 4.60045 88.2001 5.00045 87.7001 5.00045H83.3001C83.0001 5.00045 82.8001 5.20045 82.8001 5.50045V19.8004C82.8001 20.2004 82.5001 20.5005 82.1001 20.5005H79.6001C79.3001 20.4004 79.0001 20.1005 79.0001 19.7005Z"
+				fill="white" />
+			<path
+				d="M103.8 20.4001H92.7999C92.3999 20.4001 92.0999 20.1001 92.0999 19.7001V2.50006C92.0999 2.10006 92.3999 1.80006 92.7999 1.80006H103.8C104.2 1.80006 104.5 2.10006 104.5 2.50006V4.40006C104.5 4.80006 104.2 5.10006 103.8 5.10006H96.4999C96.1999 5.10006 95.9999 5.30006 95.9999 5.60006V9.00006C95.9999 9.30006 96.1999 9.50006 96.4999 9.50006H103.3C103.7 9.50006 104 9.80006 104 10.2001V11.9001C104 12.3001 103.7 12.6001 103.3 12.6001H96.4999C96.1999 12.6001 95.9999 12.8001 95.9999 13.1001V16.9001C95.9999 17.2001 96.1999 17.4001 96.4999 17.4001H103.8C104.2 17.4001 104.5 17.7001 104.5 18.1001V20.0001C104.5 20.1001 104.2 20.4001 103.8 20.4001Z"
+				fill="white" />
+			<path
+				d="M117.701 9.7L111.501 1.6C111.101 1.2 110.601 1 110.101 1C109.601 1 109.101 1.2 108.701 1.6C108.001 2.4 108.001 3.6 108.701 4.4L113.601 11L108.701 17.6C108.001 18.4 108.001 19.6 108.701 20.4C109.101 20.8 109.601 21 110.101 21C110.601 21 111.101 20.8 111.501 20.4L117.701 12.3C118.401 11.7 118.401 10.5 117.701 9.7Z"
+				fill="#7772F1" />
+			<path
+				d="M120.344 9.7L126.544 1.6C126.944 1.2 127.444 1 127.944 1C128.444 1 128.944 1.2 129.344 1.6C130.044 2.4 130.044 3.6 129.344 4.4L124.444 11L129.344 17.6C130.044 18.4 130.044 19.6 129.344 20.4C128.944 20.8 128.444 21 127.944 21C127.444 21 126.944 20.8 126.544 20.4L120.344 12.3C119.644 11.7 119.644 10.5 120.344 9.7Z"
+				fill="#7772F1" />
+		</symbol>
+		<symbol id="icon-arrow" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M10.4708 0.195262C10.7311 0.455612 10.7311 0.877722 10.4708 1.13807L5.80409 5.80474C5.54374 6.06509 5.12163 6.06509 4.86128 5.80474L0.194612 1.13807C-0.0657377 0.877722 -0.0657377 0.455612 0.194612 0.195262C0.454961 -0.0650874 0.877071 -0.0650874 1.13742 0.195262L5.33268 4.39052L9.52794 0.195262C9.78829 -0.0650874 10.2104 -0.0650874 10.4708 0.195262Z"
+				fill="currentColor" />
+		</symbol>
+		<symbol id="icon-home" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M8.52347 2.78077C8.18117 2.68809 7.82039 2.68809 7.47809 2.78077C7.12173 2.87726 6.77613 3.13005 5.7906 3.89657L4.05726 5.24472C3.42297 5.73806 3.21001 5.91103 3.05947 6.11456C2.91481 6.31015 2.80705 6.53049 2.74148 6.76476C2.67324 7.00853 2.66745 7.28283 2.66745 8.08639V12.4996C2.66745 13.0133 2.67468 13.1224 2.69615 13.1932C2.76079 13.4062 2.92752 13.573 3.14059 13.6376C3.21137 13.6591 3.32042 13.6663 3.83411 13.6663H4.25078C4.33608 13.6663 4.3546 13.6661 4.36683 13.6655C4.7093 13.6487 4.98315 13.3748 4.99998 13.0323C5.00058 13.0201 5.00078 13.0016 5.00078 12.9163V10.9996C5.00078 9.34278 6.34393 7.99963 8.00078 7.99963C9.65763 7.99963 11.0008 9.34278 11.0008 10.9996V12.9163C11.0008 13.0016 11.001 13.0201 11.0016 13.0323C11.0184 13.3748 11.2923 13.6487 11.6347 13.6655C11.647 13.6661 11.6655 13.6663 11.7508 13.6663H12.1674C12.6811 13.6663 12.7902 13.6591 12.861 13.6376C13.074 13.573 13.2408 13.4062 13.3054 13.1932C13.3269 13.1224 13.3341 13.0133 13.3341 12.4996V8.08639C13.3341 7.28283 13.3283 7.00853 13.2601 6.76476C13.1945 6.53049 13.0867 6.31015 12.9421 6.11456C12.7916 5.91103 12.5786 5.73806 11.9443 5.24472L10.211 3.89657C9.22543 3.13005 8.87984 2.87726 8.52347 2.78077ZM7.12962 1.49378C7.70013 1.33931 8.30144 1.33931 8.87194 1.49378C9.52079 1.66946 10.0901 2.11272 10.9161 2.75581C10.9534 2.78484 10.9912 2.81427 11.0296 2.8441L12.7629 4.19225C12.7868 4.21089 12.8105 4.22926 12.8338 4.24739C13.37 4.66417 13.741 4.95248 14.0141 5.3217C14.2552 5.64768 14.4348 6.01491 14.5441 6.40536C14.6679 6.84759 14.6677 7.31741 14.6675 7.99656C14.6675 8.0261 14.6674 8.05604 14.6674 8.08639V12.4996C14.6674 12.5279 14.6675 12.5558 14.6675 12.5835C14.668 12.9644 14.6684 13.2933 14.5813 13.5802C14.3874 14.2194 13.8872 14.7196 13.248 14.9135C12.9611 15.0005 12.6322 15.0002 12.2513 14.9997C12.2236 14.9997 12.1957 14.9996 12.1674 14.9996L11.7368 14.9996C11.6734 14.9996 11.6189 14.9997 11.5693 14.9972C10.5419 14.9468 9.72033 14.1252 9.66986 13.0978C9.66742 13.0482 9.66743 12.9937 9.66745 12.9303L9.66745 10.9996C9.66745 10.0792 8.92126 9.33297 8.00078 9.33297C7.08031 9.33297 6.33411 10.0792 6.33411 10.9996L6.33412 12.9303C6.33413 12.9937 6.33414 13.0482 6.33171 13.0978C6.28123 14.1252 5.45966 14.9468 4.43225 14.9972C4.38269 14.9997 4.32818 14.9996 4.26475 14.9996L3.83411 14.9996C3.80588 14.9996 3.77792 14.9997 3.75023 14.9997C3.36938 15.0002 3.04044 15.0005 2.75355 14.9135C2.11434 14.7196 1.61413 14.2194 1.42023 13.5802C1.3332 13.2933 1.3336 12.9644 1.33405 12.5835C1.33408 12.5558 1.33411 12.5279 1.33411 12.4996V8.08639C1.33411 8.05604 1.3341 8.0261 1.33409 7.99655C1.33387 7.31741 1.33371 6.84759 1.45749 6.40536C1.56678 6.01491 1.74639 5.64768 1.98749 5.3217C2.26057 4.95248 2.63153 4.66416 3.16775 4.24739C3.19108 4.22926 3.21472 4.21089 3.23867 4.19225L4.97201 2.8441C5.01037 2.81427 5.04817 2.78483 5.08545 2.75581C5.91144 2.11272 6.48077 1.66946 7.12962 1.49378Z"
+				fill="white" />
+		</symbol>
+		<symbol id="icon-checkmark" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M14.4708 3.52827C14.7311 3.78862 14.7311 4.21073 14.4708 4.47108L6.47075 12.4711C6.2104 12.7314 5.78829 12.7314 5.52794 12.4711L1.52794 8.47108C1.26759 8.21073 1.26759 7.78862 1.52794 7.52827C1.78829 7.26792 2.2104 7.26792 2.47075 7.52827L5.99935 11.0569L13.5279 3.52827C13.7883 3.26792 14.2104 3.26792 14.4708 3.52827Z"
+				fill="#7772F1" />
+		</symbol>
+		<symbol id="icon-facebook" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M9.28576 0.00381456L6.97138 0C4.37125 0 2.69093 1.77091 2.69093 4.51186V6.59213H0.363915C0.162833 6.59213 0 6.75958 0 6.96614V9.98022C0 10.1868 0.163019 10.354 0.363915 10.354H2.69093V17.9595C2.69093 18.1661 2.85376 18.3333 3.05484 18.3333H6.09093C6.29201 18.3333 6.45484 18.1659 6.45484 17.9595V10.354H9.17566C9.37674 10.354 9.53958 10.1868 9.53958 9.98022L9.54069 6.96614C9.54069 6.86696 9.50226 6.77198 9.43412 6.70179C9.36597 6.63161 9.27314 6.59213 9.17659 6.59213H6.45484V4.82866C6.45484 3.98106 6.65147 3.55078 7.72632 3.55078L9.28539 3.55021C9.48629 3.55021 9.64912 3.38275 9.64912 3.17638V0.377641C9.64912 0.171464 9.48647 0.00419601 9.28576 0.00381456Z"
+				fill="currentColor" />
+		</symbol>
+		<symbol id="icon-twitter" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M17.5 1.61041C16.8559 1.88369 16.1648 2.06902 15.4387 2.15177C16.1801 1.72664 16.7476 1.05232 17.0166 0.251294C16.3211 0.64499 15.5535 0.930865 14.7355 1.08584C14.0805 0.416751 13.1488 0 12.1153 0C10.1327 0 8.52523 1.53922 8.52523 3.43654C8.52523 3.70563 8.55694 3.96845 8.61819 4.21978C5.63501 4.0763 2.98973 2.70777 1.21928 0.628234C0.909801 1.13504 0.733743 1.72557 0.733743 2.35594C0.733743 3.54858 1.368 4.60091 2.33033 5.21657C1.742 5.19773 1.18866 5.04276 0.704233 4.78517V4.8281C0.704233 6.49297 1.94213 7.88245 3.58353 8.19869C3.2828 8.27618 2.96568 8.31911 2.63761 8.31911C2.4058 8.31911 2.18161 8.29712 1.9618 8.25523C2.41889 9.62168 3.74429 10.6154 5.31463 10.6426C4.08657 11.564 2.5381 12.1117 0.856243 12.1117C0.566463 12.1117 0.28103 12.0949 0 12.0646C1.58893 13.0415 3.4753 13.6111 5.50273 13.6111C12.1066 13.6111 15.7165 8.37357 15.7165 3.83131L15.7044 3.3863C16.4097 2.90461 17.0199 2.2994 17.5 1.61041Z"
+				fill="currentColor" />
+		</symbol>
+		<symbol id="icon-linkedin" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M16.6625 16.6667L16.6667 16.666V10.5535C16.6667 7.56319 16.0229 5.25972 12.5271 5.25972C10.8465 5.25972 9.71875 6.18194 9.25833 7.05625H9.20972V5.53889H5.89513V16.666H9.34652V11.1563C9.34652 9.70556 9.62152 8.30278 11.4181 8.30278C13.1882 8.30278 13.2146 9.95834 13.2146 11.2493V16.6667H16.6625Z"
+				fill="currentColor" />
+			<path d="M0.274996 5.53958H3.73055V16.6667H0.274996V5.53958Z" fill="currentColor" />
+			<path d="M2.00139 0C0.896528 0 0 0.896528 0 2.00139C0 3.10625 0.896528 4.02153 2.00139 4.02153C3.10625 4.02153 4.00278 3.10625 4.00278 2.00139C4.00208 0.896528 3.10556 0 2.00139 0Z"
+				fill="currentColor" />
+		</symbol>
+		<symbol id="icon-checkbox" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M9.82771 0.195262C10.0574 0.455612 10.0574 0.877722 9.82771 1.13807L3.94536 7.80474C3.71564 8.06509 3.34319 8.06509 3.11347 7.80474L0.17229 4.4714C-0.05743 4.21105 -0.05743 3.78894 0.17229 3.5286C0.40201 3.26825 0.77446 3.26825 1.00418 3.5286L3.52941 6.39052L8.99582 0.195262C9.22554 -0.0650874 9.59799 -0.0650874 9.82771 0.195262Z"
+				fill="white" />
+		</symbol>
+		<symbol id="icon-quote" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M18 8.92534C18 8.63119 18.1295 8.35196 18.3541 8.16195L28 0V19C28 19.5523 27.5523 20 27 20H19C18.4477 20 18 19.5523 18 19V8.92534Z" fill="#7772F1" />
+			<path d="M0 8.92534C0 8.63119 0.129507 8.35196 0.354058 8.16195L10 0V19C10 19.5523 9.55228 20 9 20H1C0.447715 20 0 19.5523 0 19V8.92534Z" fill="#7772F1" />
+		</symbol>
+		<symbol id="icon-slider-arrow" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M11.7929 0.292893C12.1834 -0.0976311 12.8166 -0.0976311 13.2071 0.292893L17.7071 4.79289C18.0976 5.18342 18.0976 5.81658 17.7071 6.20711L13.2071 10.7071C12.8166 11.0976 12.1834 11.0976 11.7929 10.7071C11.4024 10.3166 11.4024 9.68342 11.7929 9.29289L14.5858 6.5H1C0.447715 6.5 0 6.05228 0 5.5C0 4.94772 0.447715 4.5 1 4.5H14.5858L11.7929 1.70711C11.4024 1.31658 11.4024 0.683417 11.7929 0.292893Z"
+				fill="currentColor" />
+		</symbol>
+		<symbol id="icon-instagram" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M19.9453 5.88005C19.8984 4.81738 19.7266 4.0868 19.4804 3.45374C19.2264 2.78176 18.8357 2.18014 18.3239 1.68002C17.8237 1.1721 17.2182 0.777435 16.554 0.527447C15.9172 0.281274 15.1905 0.109427 14.1278 0.0625732C13.0572 0.0117516 12.7173 0 10.0019 0C7.28657 0 6.94669 0.0117516 5.88005 0.0586052C4.81737 0.105459 4.08679 0.277459 3.45389 0.523479C2.78176 0.777435 2.18014 1.16814 1.68001 1.68002C1.1721 2.18014 0.777586 2.78573 0.527446 3.44992C0.281274 4.0868 0.109427 4.81341 0.0625731 5.87609C0.0117515 6.9467 0 7.28658 0 10.002C0 12.7173 0.0117515 13.0572 0.0586051 14.1239C0.105459 15.1865 0.277459 15.9171 0.52363 16.5502C0.777586 17.2221 1.1721 17.8238 1.68001 18.3239C2.18014 18.8318 2.78573 19.2265 3.44992 19.4765C4.08679 19.7226 4.8134 19.8945 5.87623 19.9413C6.94272 19.9883 7.28275 19.9999 9.99812 19.9999C12.7135 19.9999 13.0534 19.9883 14.12 19.9413C15.1827 19.8945 15.9133 19.7226 16.5462 19.4765C17.8903 18.9568 18.953 17.8941 19.4726 16.5502C19.7186 15.9133 19.8906 15.1865 19.9375 14.1239C19.9843 13.0572 19.9961 12.7173 19.9961 10.002C19.9961 7.28658 19.9921 6.9467 19.9453 5.88005ZM18.1442 14.0457C18.1012 15.0225 17.9371 15.5499 17.8004 15.9015C17.4643 16.7728 16.7728 17.4643 15.9015 17.8004C15.5499 17.9372 15.0186 18.1012 14.0457 18.1441C12.9908 18.1911 12.6744 18.2027 10.0059 18.2027C7.33739 18.2027 7.01705 18.1911 5.96597 18.1441C4.98922 18.1012 4.46177 17.9372 4.11014 17.8004C3.67655 17.6402 3.28189 17.3862 2.96154 17.0541C2.62945 16.7298 2.37549 16.3391 2.21524 15.9055C2.0785 15.5539 1.91443 15.0225 1.87155 14.0497C1.82454 12.9948 1.81294 12.6783 1.81294 10.0097C1.81294 7.34122 1.82454 7.02087 1.87155 5.96995C1.91443 4.99319 2.0785 4.46575 2.21524 4.11412C2.37549 3.68038 2.62945 3.28586 2.96551 2.96536C3.28967 2.63327 3.68037 2.37931 4.11411 2.21921C4.46574 2.08247 4.99715 1.9184 5.96994 1.87537C7.02483 1.82851 7.34136 1.81676 10.0097 1.81676C12.6822 1.81676 12.9986 1.82851 14.0497 1.87537C15.0264 1.9184 15.5539 2.08247 15.9055 2.21921C16.3391 2.37931 16.7337 2.63327 17.0541 2.96536C17.3862 3.28967 17.6401 3.68038 17.8004 4.11412C17.9371 4.46575 18.1012 4.99701 18.1442 5.96995C18.1911 7.02484 18.2028 7.34122 18.2028 10.0097C18.2028 12.6783 18.1911 12.9908 18.1442 14.0457Z"
+				fill="currentColor" />
+			<path
+				d="M10.0019 4.86423C7.16554 4.86423 4.86421 7.1654 4.86421 10.002C4.86421 12.8385 7.16554 15.1397 10.0019 15.1397C12.8385 15.1397 15.1397 12.8385 15.1397 10.002C15.1397 7.1654 12.8385 4.86423 10.0019 4.86423ZM10.0019 13.3347C8.16182 13.3347 6.66922 11.8422 6.66922 10.002C6.66922 8.16169 8.16182 6.66924 10.0019 6.66924C11.8422 6.66924 13.3346 8.16169 13.3346 10.002C13.3346 11.8422 11.8422 13.3347 10.0019 13.3347Z"
+				fill="currentColor" />
+			<path
+				d="M16.5424 4.6611C16.5424 5.32346 16.0053 5.86053 15.3428 5.86053C14.6805 5.86053 14.1434 5.32346 14.1434 4.6611C14.1434 3.99858 14.6805 3.46167 15.3428 3.46167C16.0053 3.46167 16.5424 3.99858 16.5424 4.6611Z"
+				fill="currentColor" />
+		</symbol>
+		<symbol id="icon-footer-phone" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M5.66732 1.94759C5.11503 1.94759 4.66732 2.39531 4.66732 2.94759V13.0518C4.66732 13.604 5.11503 14.0518 5.66732 14.0518H10.334C10.8863 14.0518 11.334 13.604 11.334 13.0518V2.94759C11.334 2.39531 10.8863 1.94759 10.334 1.94759H10.2784L10.116 2.33723C10.0125 2.58564 9.76977 2.74744 9.50065 2.74744H6.50065C6.23153 2.74744 5.98881 2.58564 5.88528 2.33723L5.72291 1.94759H5.66732ZM3.33398 2.94759C3.33398 1.65893 4.37865 0.614258 5.66732 0.614258H10.334C11.6226 0.614258 12.6673 1.65893 12.6673 2.94759V13.0518C12.6673 14.3404 11.6226 15.3851 10.334 15.3851H5.66732C4.37865 15.3851 3.33398 14.3404 3.33398 13.0518V2.94759Z"
+				fill="currentColor" />
+		</symbol>
+		<symbol id="icon-footer-email" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M15.1673 12.0003V4.66699C15.1673 3.56242 14.2719 2.66699 13.1673 2.66699L2.83398 2.667C1.72941 2.667 0.833984 3.56243 0.833984 4.667V12.0003C0.833984 13.1049 1.72941 14.0003 2.83399 14.0003L13.1673 14.0003C14.2719 14.0003 15.1673 13.1049 15.1673 12.0003ZM13.834 6.1733V12.0003C13.834 12.3685 13.5355 12.667 13.1673 12.667L2.83399 12.667C2.4658 12.667 2.16732 12.3685 2.16732 12.0003L2.16732 6.17321L6.8761 9.37518C7.55482 9.83671 8.44662 9.83671 9.12534 9.37518L13.834 6.1733ZM13.8264 4.56607C13.7778 4.24577 13.5012 4.00032 13.1673 4.00033L2.83398 4.00034C2.50013 4.00034 2.2236 4.24573 2.17492 4.56599L7.62584 8.27261C7.85208 8.42646 8.14935 8.42646 8.37559 8.27261L13.8264 4.56607Z"
+				fill="currentColor" />
+		</symbol>
+		<symbol id="icon-footer-heart" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M7.99925 13.2715C4.93321 11.5252 3.22318 9.78955 2.39626 8.28361C1.54992 6.74228 1.62377 5.4441 2.0934 4.52273C3.05872 2.62892 5.80378 2.02333 7.4763 4.13865L7.99921 4.80001L8.52217 4.13868C10.195 2.02327 12.9402 2.62896 13.9055 4.52273C14.3751 5.44408 14.4489 6.74226 13.6025 8.28359C12.7756 9.78954 11.0654 11.5252 7.99925 13.2715ZM7.99928 2.73726C5.64647 0.501518 2.17555 1.42555 0.905488 3.91723C0.20846 5.2847 0.198939 7.05212 1.22753 8.92536C2.247 10.782 4.2796 12.7417 7.67675 14.6194L7.99924 14.7976L8.32173 14.6194C11.719 12.7417 13.7517 10.782 14.7712 8.92537C15.7999 7.05214 15.7904 5.28472 15.0934 3.91723C13.8233 1.4255 10.3523 0.501552 7.99928 2.73726Z"
+				fill="currentColor" />
+		</symbol>
+		<symbol id="icon-shapes-client" viewBox="0 0 299 251" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.3">
+				<path
+					d="M298.894 26.7761C298.894 33.6352 296.322 40.4942 291.111 45.7044L95.1017 241.714C84.6813 252.134 67.7316 252.134 57.3112 241.714C52.2329 236.636 49.4629 229.909 49.4629 222.786C49.4629 215.663 52.2329 208.936 57.3112 203.857L253.321 7.84791C258.399 2.76961 265.06 -0.000384041 272.249 -0.000384126C279.372 -0.000384211 286.099 2.7696 291.177 7.84791C296.322 13.1241 298.894 19.9171 298.894 26.7761ZM50.7819 222.786C50.7819 229.579 53.42 235.976 58.2345 240.725C68.1273 250.618 84.2856 250.618 94.1784 240.725L290.188 44.7151C300.081 34.8223 300.081 18.664 290.188 8.77124C285.373 3.95672 278.976 1.31866 272.249 1.31866C265.456 1.31866 259.059 3.95672 254.31 8.77124L58.2345 204.847C53.42 209.595 50.7819 215.993 50.7819 222.786Z"
+					fill="#00F0B5" />
+				<path
+					d="M249.431 27.6902C249.431 34.5492 246.859 41.4082 241.648 46.6185L45.6388 242.628C35.2184 253.048 18.2687 253.048 7.8483 242.628C2.76999 237.55 2.75254e-06 230.823 2.6676e-06 223.7C2.58266e-06 216.577 2.76999 209.85 7.8483 204.772L203.858 8.76198C208.936 3.68367 215.597 0.913678 222.786 0.913678C229.909 0.913678 236.636 3.68367 241.714 8.76198C246.859 14.0381 249.431 20.8312 249.431 27.6902ZM1.31904 223.7C1.31904 230.493 3.95713 236.89 8.77163 241.639C18.6644 251.532 34.8227 251.532 44.7155 241.639L240.725 45.6292C250.618 35.7364 250.618 19.5781 240.725 9.6853C235.911 4.87079 229.513 2.23272 222.786 2.23272C215.993 2.23272 209.596 4.87079 204.847 9.6853L8.77163 205.761C3.95713 210.509 1.31904 216.907 1.31904 223.7Z"
+					fill="#00F0B5" />
+			</g>
+		</symbol>
+		<symbol id="icon-shapes-about" viewBox="0 0 760 1587" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.4">
+				<path
+					d="M900.463 292.688C843.496 267.909 788.988 280.478 737.183 308.525C685.358 336.583 636.337 380.076 590.355 417.044C543.329 454.852 487.566 493.81 446.279 539.718C405.012 585.605 378.291 638.35 389.279 703.693C399.95 767.152 446.446 802.387 502.119 832.775C516.034 840.371 530.514 847.659 545.144 855.009C559.771 862.357 574.549 869.767 589.047 877.602C618.043 893.271 645.95 910.651 669.369 932.674C695.042 956.816 716.337 987.548 735.874 1020.13C745.643 1036.43 754.977 1053.19 764.2 1069.83C773.423 1086.48 782.536 1102.99 791.866 1118.81C829.215 1182.11 869.949 1233.88 934.969 1237C1004.29 1240.32 1070.19 1205.05 1121.99 1150.93C1173.78 1096.81 1211.41 1023.91 1224.2 952.109C1235.24 890.114 1207.02 836.303 1168.67 783.142C1149.5 756.553 1127.84 730.193 1107.3 703.03C1086.77 675.887 1067.4 647.982 1052.87 618.391C1038.94 590.018 1029.31 558.434 1020.98 526.293C1012.64 494.128 1005.61 461.453 996.881 430.782C979.417 369.451 955.211 316.503 900.463 292.688Z"
+					stroke="#00F0B5" />
+				<path
+					d="M879.91 399.24C835.1 379.749 792.22 389.63 751.448 411.704C710.655 433.789 672.07 468.024 635.859 497.136C598.826 526.909 554.934 557.574 522.435 593.71C489.955 629.826 468.938 671.324 477.582 722.728C485.975 772.64 522.542 800.361 566.37 824.284C577.325 830.263 588.723 836 600.242 841.787C611.759 847.573 623.396 853.408 634.813 859.577C657.645 871.916 679.627 885.605 698.076 902.954C718.301 921.973 735.073 946.179 750.457 971.838C758.149 984.668 765.499 997.869 772.76 1010.97C780.023 1024.08 787.196 1037.08 794.542 1049.53C823.95 1099.37 855.995 1140.08 907.124 1142.53C961.665 1145.15 1013.52 1117.39 1054.29 1074.8C1095.05 1032.2 1124.67 974.821 1134.74 918.313C1143.43 869.546 1121.23 827.21 1091.04 785.358C1075.94 764.424 1058.89 743.678 1042.72 722.285C1026.56 700.913 1011.3 678.935 999.855 655.627C988.882 633.279 981.296 608.403 974.735 583.095C968.168 557.763 962.64 532.046 955.764 507.897C942.015 459.612 922.967 417.969 879.91 399.24Z"
+					stroke="#00F0B5" />
+				<path
+					d="M865.059 476.224C829.032 460.553 794.553 468.493 761.752 486.252C728.93 504.022 697.885 531.567 668.736 555.002C638.922 578.971 603.606 603.642 577.457 632.719C551.326 661.775 534.43 695.146 541.38 736.479C548.127 776.603 577.521 798.894 612.792 818.146C621.607 822.957 630.78 827.574 640.051 832.232C649.319 836.888 658.686 841.586 667.877 846.552C686.257 856.484 703.957 867.507 718.815 881.479C735.102 896.795 748.608 916.287 760.991 936.941C767.184 947.269 773.1 957.895 778.944 968.44C784.789 978.987 790.561 989.453 796.473 999.471C820.143 1039.59 845.912 1072.3 887.004 1074.27C930.864 1076.38 972.577 1054.06 1005.37 1019.79C1038.17 985.521 1062 939.354 1070.1 893.892C1077.08 854.684 1059.24 820.639 1034.95 786.958C1022.79 770.109 1009.08 753.419 996.054 736.196C983.046 718.992 970.762 701.297 961.547 682.529C952.711 664.533 946.603 644.504 941.322 624.134C936.035 603.738 931.588 583.049 926.054 563.614C914.989 524.754 899.668 491.279 865.059 476.224Z"
+					stroke="#00F0B5" />
+			</g>
+		</symbol>
+		<symbol id="icon-shapes-form-right" viewBox="0 0 186 427" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.4">
+				<path
+					d="M371.256 319.49C364.396 350.674 346.255 377.625 316.785 400.345C302.087 411.676 286.425 417.437 269.789 417.656C253.146 417.875 235.487 412.548 216.804 401.632C179.3 379.72 134.867 358.329 83.5085 337.457C57.8872 327.045 41.2206 314.102 33.3798 298.68C25.5514 283.283 26.4667 265.303 36.255 244.676C55.9112 203.252 76.0916 167.042 96.7945 136.043C117.433 105.139 150.352 82.9265 195.613 69.4357C240.787 55.9706 286.088 64.5099 331.551 95.1255C354.286 110.435 370.553 127.38 380.387 145.95C390.219 164.514 393.635 184.729 390.632 206.612C384.599 250.565 378.14 288.19 371.256 319.49Z"
+					stroke="#00F0B5" />
+				<path
+					d="M345.41 303.499C339.856 328.784 325.149 350.636 301.24 369.057C289.323 378.239 276.626 382.902 263.14 383.074C249.647 383.246 235.321 378.923 220.156 370.062C189.689 352.26 153.596 334.879 111.881 317.918C91.0806 309.461 77.5663 298.96 71.2087 286.469C64.8637 274.001 65.5936 259.44 73.5266 242.717C89.4726 209.103 105.845 179.721 122.643 154.57C139.377 129.516 166.079 111.507 202.813 100.577C239.461 89.6718 276.221 96.6091 313.131 121.463C331.589 133.891 344.792 147.642 352.775 162.702C360.755 177.755 363.534 194.145 361.105 211.888C356.221 247.562 350.989 278.098 345.41 303.499Z"
+					stroke="#00F0B5" />
+				<path
+					d="M329.466 293.634C324.708 315.295 312.108 334.019 291.619 349.805C281.412 357.669 270.54 361.661 258.994 361.808C247.441 361.955 235.171 358.253 222.176 350.66C196.049 335.394 165.099 320.49 129.329 305.947C111.502 298.698 99.9323 289.705 94.4924 279.016C89.065 268.352 89.6854 255.89 96.4811 241.565C110.152 212.746 124.189 187.557 138.589 165.995C152.925 144.53 175.805 129.097 207.29 119.728C238.689 110.385 270.186 116.328 301.819 137.628C317.638 148.28 328.949 160.061 335.787 172.96C342.622 185.854 345.003 199.892 342.922 215.091C338.735 245.677 334.249 271.858 329.466 293.634Z"
+					stroke="#00F0B5" />
+			</g>
+		</symbol>
+		<symbol id="icon-shapes-main-form" viewBox="0 0 464 402" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.4">
+				<path
+					d="M82.6195 -283.921C44.4063 -289.637 13.6727 -273.318 -12.9691 -248.096C-39.6278 -222.859 -62.1096 -188.787 -83.838 -159.101C-106.062 -128.738 -133.332 -96.3103 -150.774 -62.0292C-168.202 -27.7734 -175.759 8.23034 -158.635 45.7269C-142.012 82.1261 -108.415 95.8211 -70.0043 105.133C-60.405 107.46 -50.515 109.511 -40.521 111.576C-30.5299 113.64 -20.4349 115.718 -10.439 118.097C9.55192 122.854 29.1757 128.821 46.8494 138.313C66.2239 148.719 84.0169 163.8 101.04 180.271C109.553 188.507 117.88 197.096 126.116 205.627C134.355 214.16 142.502 222.633 150.669 230.646C183.37 262.734 216.177 287.253 255.715 278.667C297.917 269.501 331.864 237.679 354.299 196.771C376.733 155.867 387.619 105.94 383.742 60.6887C380.397 21.6628 354.778 -6.13781 323.123 -31.9518C307.287 -44.8657 290.009 -57.2318 273.252 -70.2798C256.514 -83.3128 240.337 -96.9961 226.804 -112.481C213.828 -127.33 202.925 -144.805 192.722 -162.815C182.507 -180.847 173.015 -199.37 162.81 -216.426C142.405 -250.528 119.329 -278.429 82.6195 -283.921Z"
+					stroke="#00F0B5" />
+				<path
+					d="M87.4376 -216.458C57.3963 -220.952 33.2296 -208.126 12.2661 -188.28C-8.71439 -168.418 -26.4074 -141.604 -43.5199 -118.225C-61.0237 -94.3102 -82.4843 -68.7905 -96.2117 -41.8095C-109.926 -14.8542 -115.864 13.4574 -102.4 42.9397C-89.3339 71.5506 -62.9258 82.3228 -32.6892 89.6529C-25.1333 91.4847 -17.3483 93.0995 -9.47934 94.7254C-1.61334 96.3506 6.33645 97.9871 14.2085 99.8604C29.9516 103.607 45.4129 108.307 59.3402 115.787C74.6076 123.987 88.6256 135.869 102.031 148.839C108.735 155.326 115.291 162.09 121.776 168.806C128.263 175.525 134.678 182.195 141.106 188.503C166.855 213.769 192.647 233.03 223.715 226.283C256.902 219.075 283.608 194.048 301.263 161.856C318.917 129.668 327.483 90.3793 324.431 54.772C321.802 24.0907 301.662 2.22645 276.743 -18.0947C264.275 -28.2623 250.679 -37.993 237.479 -48.2707C224.299 -58.5334 211.556 -69.3122 200.895 -81.5121C190.671 -93.2115 182.082 -106.977 174.048 -121.159C166.001 -135.362 158.533 -149.939 150.498 -163.368C134.434 -190.215 116.288 -212.142 87.4376 -216.458Z"
+					stroke="#00F0B5" />
+				<path
+					d="M90.9169 -167.716C66.7801 -171.327 47.3583 -161.025 30.4975 -145.063C13.6199 -129.085 -0.612195 -107.514 -14.3895 -88.6912C-28.483 -69.4361 -45.7466 -48.9091 -56.7903 -27.2029C-67.8212 -5.52204 -72.5895 17.2328 -61.7698 40.925C-51.2737 63.9083 -30.0607 72.5687 -5.73 78.4672C0.349288 79.941 6.61367 81.2406 12.9471 82.5492C19.2777 83.8572 25.6778 85.1745 32.0153 86.6827C44.6893 89.6987 57.1437 93.4842 68.3643 99.5108C80.6641 106.117 91.9537 115.687 102.745 126.128C108.142 131.35 113.42 136.795 118.64 142.201C123.861 147.609 129.023 152.977 134.196 158.052C154.922 178.39 175.644 193.852 200.592 188.434C227.266 182.641 248.74 162.522 262.942 136.628C277.141 110.737 284.033 79.1341 281.578 50.495C279.466 25.8428 263.284 8.26766 243.232 -8.08487C233.197 -16.2681 222.26 -24.0942 211.632 -32.3703C201.022 -40.6316 190.76 -49.3118 182.173 -59.1381C173.937 -68.5619 167.021 -79.6483 160.554 -91.0638C154.074 -102.501 148.068 -114.225 141.601 -125.033C128.673 -146.639 114.089 -164.25 90.9169 -167.716Z"
+					stroke="#00F0B5" />
+			</g>
+		</symbol>
+		<symbol id="icon-shapes-main-slider" viewBox="0 0 159 389" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g opacity="0.3">
+				<path
+					d="M15.6037 285.508C15.6037 276.716 18.9005 267.925 25.5786 261.247L276.808 10.0171C290.164 -3.33902 311.889 -3.33902 325.245 10.0171C331.754 16.5261 335.305 25.1483 335.305 34.2778C335.305 43.4073 331.754 52.0296 325.245 58.5386L74.0155 309.768C67.5065 316.277 58.9688 319.828 49.7548 319.828C40.6253 319.828 32.003 316.277 25.494 309.768C18.9005 303.006 15.6037 294.299 15.6037 285.508ZM333.614 34.2778C333.614 25.571 330.233 17.3714 324.062 11.2851C311.382 -1.39478 290.672 -1.39478 277.992 11.2851L26.762 262.515C14.0822 275.195 14.0822 295.905 26.762 308.585C32.9329 314.756 41.1325 318.137 49.7548 318.137C58.4616 318.137 66.6612 314.756 72.7475 308.585L324.062 57.2706C330.233 51.1843 333.614 42.9846 333.614 34.2778Z"
+					fill="#00F0B5" />
+				<path
+					d="M0.000217028 354.508C0.000216923 345.716 3.297 336.925 9.97504 330.247L261.205 79.0171C274.561 65.661 296.286 65.661 309.642 79.0171C316.151 85.5261 319.701 94.1483 319.701 103.278C319.701 112.407 316.151 121.03 309.642 127.539L58.412 378.768C51.903 385.277 43.3653 388.828 34.1513 388.828C25.0218 388.828 16.3995 385.277 9.89051 378.768C3.297 372.006 0.000217133 363.299 0.000217028 354.508ZM318.011 103.278C318.011 94.571 314.629 86.3714 308.458 80.2851C295.779 67.6052 275.068 67.6052 262.388 80.2851L11.1585 331.515C-1.52136 344.195 -1.52136 364.905 11.1585 377.585C17.3293 383.756 25.529 387.137 34.1513 387.137C42.8581 387.137 51.0577 383.756 57.144 377.585L308.458 126.271C314.629 120.184 318.011 111.985 318.011 103.278Z"
+					fill="#00F0B5" />
+			</g>
+		</symbol>
+		<symbol id="icon-illustration-bg" viewBox="0 0 706 536" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M693.518 324.815C699.353 248.686 717.182 174.01 637.586 105.073C558.166 36.2885 472.418 64.0506 361.739 37.4666C241.149 8.50199 204.905 -18.3084 148.065 16.4082C79.9544 58.0087 103.99 88.3848 42.6138 175.098C28.4413 195.121 -54.1059 289.378 57.7652 386.955C142.124 445.359 198.001 465.113 301.935 490.37C417.656 518.492 544.495 546.18 649.01 530.634C746.117 516.188 687.86 398.633 693.518 324.815Z"
+				fill="url(#paint0_linear_1772_2895)" />
+			<defs>
+				<linearGradient id="paint0_linear_1772_2895" x1="898.114" y1="202.067" x2="239.692" y2="408.568" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#F4F5F7" stop-opacity="0" />
+					<stop offset="1" stop-color="#F4F5F7" />
+				</linearGradient>
+			</defs>
+		</symbol>
+	</svg>
+	<script>
+		// самое простое переключение темы. Стили в файле _reboot.scss в папке global
+		// добавить в тег body data-theme="dark"
+		document.body.setAttribute('data-theme', 'dark');
+	</script>
+</body>
+
 </html>

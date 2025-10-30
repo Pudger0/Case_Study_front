@@ -1,0 +1,86 @@
+.case-studies {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 180px;
+
+	&__heading {
+		display: flex;
+		justify-content: space-between;
+		gap: 50px;
+		margin-bottom: 60px;
+	}
+
+	&__title {
+		margin: 0;
+		font-size: 46px;
+		line-height: 1.3;
+		font-weight: 900;
+		color: $color-dark-slate;
+	}
+
+	&__slider-buttons {
+		display: flex;
+		align-items: center;
+	}
+
+	&__btn {
+		width: 48px;
+		height: 48px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		transition:
+			background-color $transition-03,
+			color $transition-03;
+		&:hover {
+			background-color: $color-accent-purple;
+			.case-studies__btn-icon {
+				color: $color-white;
+			}
+		}
+	}
+
+	&__btn--prev {
+		transform: scale(-1);
+	}
+
+	&__btn-icon {
+		display: flex;
+		flex-shrink: 0;
+	}
+
+	&__slider {
+		margin-bottom: 60px;
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		gap: 29px;
+	}
+
+	&__item {
+		width: calc(100% / 3 - 29px * 2 / 3);
+	}
+
+	&__more-studies-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 40px;
+	}
+
+	&__text {
+		font-size: 28px;
+		line-height: 1.5;
+		font-weight: 700;
+		color: $color-dark-slate;
+	}
+
+	&__button {
+		width: 237px;
+	}
+}

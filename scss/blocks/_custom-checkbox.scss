@@ -1,0 +1,51 @@
+.custom-checkbox {
+	&__field {
+		&:checked {
+			+ .custom-checkbox__label .custom-checkbox__icon {
+				opacity: 1;
+			}
+		}
+
+		&:checked,
+		&:hover,
+		&:focus-visible {
+			+ .custom-checkbox__label .custom-checkbox__icon-wrapper {
+				background-color: $color-accent-purple;
+			}
+		}
+	}
+
+	&__label {
+		font-size: 16px;
+		line-height: 1.6;
+		color: $color-white;
+		display: flex;
+		gap: 15px;
+		align-items: baseline;
+	}
+
+	&__icon-wrapper {
+		position: relative;
+		width: 16px;
+		height: 16px;
+		background-color: $color-white;
+		flex-shrink: 0;
+		border-radius: 3px;
+		transition: background-color $transition-03;
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 1.6;
+		color: $color-white;
+	}
+
+	&__icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0;
+		transition: opacity $transition-03;
+	}
+}

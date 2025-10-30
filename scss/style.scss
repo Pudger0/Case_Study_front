@@ -1,0 +1,32 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/_normalize";
+@import "global/_fonts";
+@import "global/_variables";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/_components";
+@import "blocks/_btn";
+@import "blocks/_progress-circle";
+@import "blocks/_text-list";
+@import "blocks/_socials";
+@import "blocks/_header";
+@import "blocks/_hero";
+@import "blocks/_breadcrumbs";
+@import "blocks/_about";
+@import "blocks/_metrics";
+@import "blocks/_client-card";
+@import "blocks/_client-tags";
+@import "blocks/_analysis-form";
+@import "blocks/_custom-input";
+@import "blocks/_custom-checkbox";
+@import "blocks/_reviews";
+@import "blocks/_review-card";
+@import "blocks/_case-studies";
+@import "blocks/_studies-card";
+@import "blocks/_footer";
+@import "blocks/_menu-footer";
