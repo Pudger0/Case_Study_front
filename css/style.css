@@ -340,6 +340,10 @@ template {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #ffffff;
   color: #424551;
@@ -354,6 +358,7 @@ body {
 
 main {
   flex-grow: 1;
+  overflow: hidden;
 }
 
 img {
@@ -412,6 +417,16 @@ button {
   height: 183px;
   background-color: #f4f5f6;
   z-index: -2;
+}
+.sections-bg__icon-under-form {
+  position: absolute;
+  left: 0;
+  top: -19%;
+}
+.sections-bg__icon-slider-right {
+  position: absolute;
+  right: -4.5%;
+  bottom: 55%;
 }
 
 .btn {
@@ -632,7 +647,7 @@ button {
   align-items: center;
   justify-content: center;
   margin-bottom: 100px;
-  padding-top: 80px;
+  padding-top: 80px 0;
 }
 .hero__image {
   position: absolute;
@@ -696,6 +711,7 @@ button {
 }
 
 .about {
+  overflow: hidden;
   position: relative;
   margin-bottom: 183px;
 }
@@ -775,6 +791,11 @@ button {
   line-height: 1.5;
   font-weight: 700;
   color: #1e212c;
+}
+.about__decor-icon {
+  position: absolute;
+  bottom: 7%;
+  right: 0;
 }
 
 .metrics__list {
@@ -1398,6 +1419,7 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  scroll-behavior: smooth;
 }
 .footer__go-top-button svg {
   transform: rotate(180deg);

@@ -1,75 +1,45 @@
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-	background-color: $color-white;
-	color: $color-dark-gray;
-	font-family: $ff-lato;
-	font-weight: 400;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	margin: 0;
-	padding: 0;
+  background-color: $color-white;
+  color: $color-dark-gray;
+  font-family: $ff-lato;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 main {
-	flex-grow: 1;
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 img {
-	display: block;
-	height: auto;
-	max-width: 100%;
-	object-fit: cover;
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 a {
-	color: $color-white;
-	text-decoration: none;
+  color: $color-white;
+  text-decoration: none;
 }
 
 button {
-	background-color: transparent;
-	border: none;
-	padding: 0;
-	cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
-
-.main {
-	position: relative;
-	overflow: hidden;
-
-	&__icon-under-form {
-		position: absolute;
-		left: 0;
-		bottom: 20%;
-	}
-
-	&__icon-slider-right {
-		position: absolute;
-		right: -4.5%;
-		bottom: 14%;
-	}
-}
-
-// ------------------Стили для переключения темы------------------
-
-// :root {
-// 	--bg-color: #ffffff;
-// 	--text-color: #111111;
-// }
-
-// /* Тёмная тема */
-// [data-theme="dark"] {
-// 	--bg-color: #111111;
-// 	--text-color: #ffffff;
-// }
-
-// body {
-// 	background: var(--bg-color);
-// 	color: var(--text-color);
-// }
